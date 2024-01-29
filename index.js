@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "*",
+    origin: "https://tiny-sundae-162a24.netlify.app",
     methods: "GET,POST,PUT,DELETE",
     credentials: true,
   })
