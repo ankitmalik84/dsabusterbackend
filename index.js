@@ -10,9 +10,8 @@ const userRoutes = require("./routes/User");
 const database = require("./config/database");
 const userdb = require("./models/User");
 
-const clientid =
-  "286297522947-jipnb0j254nh1qrl9p3bamnjo1d5q6o8.apps.googleusercontent.com";
-const clientsecret = "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";
+const clientid = process.env.GOOGLE_CLIENT_ID;
+const clientsecret = process.env.GOOGLE_CLIENT_SECRET;
 const URL = process.env.URL;
 
 dotenv.config();
